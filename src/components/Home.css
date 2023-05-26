@@ -1,0 +1,136 @@
+/* Home.css */
+
+.home-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-header {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: #888;
+}
+
+.home-section {
+  margin-bottom: 40px;
+}
+
+.home-image-container {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-image:hover {
+  opacity: 0.8; /* Example: Reduce opacity on hover */
+}
+
+.home-section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-section-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.home-services-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.home-section-button {
+  background-color: peru;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.home-section-button:hover {
+  background-color: #555;
+}
+
+.home-photo-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.home-photo-item {
+  flex-basis: 30%;
+}
+
+.home-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s, opacity 0.3s;
+}
+/* Home.css */
+
+.learn-more-button {
+  display: inline-block;
+  background-color: peru;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.learn-more-button:hover {
+  background-color: #555;
+}
+
+.home-photo:hover {
+  transform: scale(1.05); /* Example: Increase size on hover */
+  opacity: 0.9; /* Example: Reduce opacity on hover */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .home-photo-gallery {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .home-photo-item {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-photo-item {
+    flex-basis: 100%;
+  }
+  
+  .home-photo:hover {
+    transform: none; /* Remove transform on hover */
+    opacity: 1; /* Reset opacity on hover */
+  }
+}

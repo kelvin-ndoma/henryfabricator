@@ -6,6 +6,10 @@ const Aboutus = () => {
     <div className="aboutus-container">
       <h1>About Quality Aluminium Fabricator Company</h1>
 
+      <p className="intro-text">
+        Welcome to Quality Aluminium Fabricator Company! We are a trusted provider of high-quality aluminium fabrication services. With years of experience in the industry, we offer a wide range of services to meet your office needs. From office partitioning and sliding doors to window blinds and glass tinting, we have the expertise to create functional and visually appealing office spaces. Our team of professionals is dedicated to delivering exceptional results and ensuring customer satisfaction. Explore our services and let us transform your office into a modern and efficient workspace.
+      </p>
+
       <div className="content-wrapper">
         <div className="content-left">
           <p>Dealers in:</p>

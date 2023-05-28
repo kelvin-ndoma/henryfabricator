@@ -1,45 +1,38 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css"
 
-const Navbar = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+function Navbar() {
+	const navRef = useRef();
 
-  const handleMenuToggle = () => {
-    setMenuOpen(!isMenuOpen);
-  };
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
 
-  return (
-    <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
-      <div className="navbar-toggle" onClick={handleMenuToggle}>
-        <span className="toggle-bar"></span>
-        <span className="toggle-bar"></span>
-        <span className="toggle-bar"></span>
-      </div>
-      <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
-        <li>
-          <Link className='home' to="/" onClick={handleMenuToggle}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/aboutus" onClick={handleMenuToggle}>
-            About Us
-          </Link>
-        </li>
-        <li>
-          <Link to="/services" onClick={handleMenuToggle}>
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" onClick={handleMenuToggle}>
-            Contact Us
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  );
-};
+	return (
+		<header>
+			<h3>Aluminium Company</h3>
+			<nav ref={navRef}>
+				<a href="/">Welcome!</a>
+				<a href="/aboutus">About Us</a>
+				<a href="/services">Our Services</a>
+				<a href="/contact">Contact</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
+	);
+}
 
 export default Navbar;

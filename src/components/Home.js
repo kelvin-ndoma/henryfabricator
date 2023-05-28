@@ -7,7 +7,8 @@ const Home = () => {
     <div className="home-container">
       <header className="home-header">
         <h1 className="home-title">Welcome to Aluminum Fabricator Company</h1>
-        <p className="home-subtitle">Providing Quality Aluminum Products</p>
+        
+      
       </header>
       <section className="home-section">
         <div className="home-section-content">

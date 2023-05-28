@@ -1,5 +1,6 @@
 import React from 'react';
 import './Service.css';
+import { Link } from 'react-router-dom';
 
 const Service = () => {
   const services = [
@@ -7,6 +8,7 @@ const Service = () => {
       title: 'Office Partitioning',
       description: 'We offer office partitioning services to create separate areas and optimize space utilization in your office. Our expert team will design and install partitions tailored to your requirements.',
       image: 'https://img.freepik.com/premium-photo/3d-rendering-empty-office-workstation-partition-interior_674881-1977.jpg?size=626&ext=jpg&ga=GA1.1.1191098058.1684769255&semt=ais'
+      
     },
     {
       title: 'Sliding Doors, Sliding Windows, and Project Windows',
@@ -31,7 +33,7 @@ const Service = () => {
     {
       title: 'Office Planning (Plane Drawing)',
       description: 'Our experts can help you with office planning through precise plane drawings. We consider your space, furniture, and workflow to create an optimized office layout.',
-      image: 'https://img.freepik.com/premium-photo/office-contour-visualization-3d-illustration-sketch-outline_375001-8428.jpg?size=626&ext=jpg&ga=GA1.1.1191098058.1684769255&semt=ais'
+      image: 'https://img.freepik.com/free-vector/office-cubicles-isometric-with-illustration_1284-56280.jpg?size=626&ext=jpg&ga=GA1.2.1191098058.1684769255&semt=ais'
     },
     {
       title: 'Glass Tinting',
@@ -41,7 +43,7 @@ const Service = () => {
     {
       title: 'Office Maintenance',
       description: 'Keep your office in top condition with our maintenance services. We offer comprehensive maintenance solutions to ensure the smooth functioning of your office environment.',
-      image: 'https://img.freepik.com/free-vector/professional-cleaning-service-isometric-composition-with-text-indoor-office-scenery-workplaces-computers-workers-group_1284-55666.jpg?size=626&ext=jpg&ga=GA1.1.1191098058.1684769255&semt=ais'
+      image: 'https://img.freepik.com/free-vector/home-repairmen-workflow-background-large-smartphone-foreground-flat-illustration_1284-62926.jpg?size=626&ext=jpg&ga=GA1.1.1191098058.1684769255&semt=ais'
     },
     {
       title: 'All Aluminium Accessories',
@@ -62,6 +64,9 @@ const Service = () => {
             <div className="service-content">
               <h2>{service.title}</h2>
               <p>{service.description}</p>
+              <Link to="/contact" className="get-service-btn">
+                Get Service
+              </Link>
             </div>
           </div>
         ))}

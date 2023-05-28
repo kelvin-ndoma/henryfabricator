@@ -5,6 +5,7 @@ import Aboutus from './components/Aboutus';
 import Service from './components/Service';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
           <Route path="/services" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
+        <Footer />
       </div>
     </Router>
   );
